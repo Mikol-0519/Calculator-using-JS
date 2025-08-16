@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display-top" id="display-top"></div>
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="pressNum('7')">7</button>
+      <button onclick="pressNum('8')">8</button>
+      <button onclick="pressNum('9')">9</button>
+      <button onclick="pressOperator('+')">+</button>
+      <button onclick="pressNum('4')">4</button>
+      <button onclick="pressNum('5')">5</button>
+      <button onclick="pressNum('6')">6</button>
+      <button onclick="pressOperator('-')">-</button>
+      <button onclick="pressNum('1')">1</button>
+      <button onclick="pressNum('2')">2</button>
+      <button onclick="pressNum('3')">3</button>
+      <button onclick="pressOperator('*')">*</button>
+      <button onclick="pressNum('0')">0</button>
+      <button onclick="pressDecimal('.')">.</button>
+      <button onclick="pressEquals('=')">=</button>
+      <button onclick="pressOperator('/')">/</button>
+    </div>
+  </div>
+  <script src="Calculator.js"></script>
+</body>
+</html>

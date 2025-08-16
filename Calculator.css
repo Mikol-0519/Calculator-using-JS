@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fceef2; /* Soft pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.calculator {
+  background-color: #f8dce3; /* Light pink card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.display-top {
+  background-color: #fde7ec;
+  color: #a45b72;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px 15px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: monospace;
+  border: 2px solid #f4c6d1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.display {
+  background-color: #fff0f4;
+  color: #862e45;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px 15px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: monospace;
+  border: 2px solid #f4c6d1;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #862e45;
+  background-color: #f2bac9;
+  border: none;
+}
+
+/* Number & operator buttons (no box style) */
+button:nth-child(1), button:nth-child(2), button:nth-child(3),
+button:nth-child(5), button:nth-child(6), button:nth-child(7),
+button:nth-child(9), button:nth-child(10), button:nth-child(11),
+button:nth-child(13), button:nth-child(14) {
+  background-color: transparent;
+  color: #862e45;
+  box-shadow: none;
+  border: none;
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover, button:nth-child(3):hover,
+button:nth-child(5):hover, button:nth-child(6):hover, button:nth-child(7):hover,
+button:nth-child(9):hover, button:nth-child(10):hover, button:nth-child(11):hover,
+button:nth-child(13):hover, button:nth-child(14):hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+/* Operator buttons (+, -, ×, ÷) */
+button:nth-child(4), button:nth-child(8), button:nth-child(12), button:nth-child(16) {
+  background-color: #e48ba0;
+  color: white;
+  font-weight: bold;
+}
+
+button:nth-child(4):hover, button:nth-child(8):hover, button:nth-child(12):hover, button:nth-child(16):hover {
+  background-color: #f29caf;
+}
+
+/* Equals button (=) */
+button:nth-child(15) {
+  background-color: #d46079;
+  color: white;
+  font-weight: bold;
+}
+
+button:nth-child(15):hover {
+  background-color: #e2788e;
+}
+
+button:active {
+  transform: scale(0.95);
+}
